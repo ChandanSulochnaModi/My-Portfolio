@@ -1,0 +1,210 @@
+:root {
+  --kprimary: #000000;
+  --kprimary2: #f89880;
+  --kprimary3: blanchedalmond;
+  --kprimary4: #502975;
+  --kprimary5: #fdec6e;
+  --kheadings: blanchedalmond;
+}
+
+html {
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--kprimary);
+  color: var(--kprimary3);
+  overflow-x: hidden;
+  font-family: 'Rubik', sans-serif;
+}
+
+#preloader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 9999;
+  overflow: hidden;
+  background: #000000;
+}
+
+#preloader:before {
+  content: "";
+  position: fixed;
+  top: calc(50% - 30px);
+  left: calc(50% - 30px);
+  border: 6px solid purple;
+  border-top-color: #fff;
+  border-bottom-color: #fff;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  animation: animate-preloader 1s linear infinite;
+}
+
+@keyframes animate-preloader {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.hello {
+  padding: 10px;
+  background-color: #f0b562;
+  display: inline;
+  border-radius: 20px 20px 20px 0;
+  font-size: 20px;
+  line-height: 40px;
+}
+
+.name2 {
+  font-family: 'Josefin Slab', serif;
+}
+
+#name {
+  color: var(--kprimary4);
+}
+
+.social-icon {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 100%;
+  margin-right: 20px;
+  margin-top: 20px;
+  filter: grayscale(100%);
+}
+
+.social-icon:hover {
+  filter: grayscale(0%);
+}
+
+.svg-instagram {
+  width: 40px;
+  height: 40px;
+  display: inline-block;
+  text-decoration: none;
+  border-radius: 100%;
+}
+
+#main li {
+  display: inline-block;
+  margin-bottom: 30px;
+}
+
+.navbar {
+  background-color: var(--kprimary4);
+}
+
+.navbar .nav-link {
+  font-size: 15px;
+  text-transform: uppercase;
+  padding-left: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.navbar .nav-item.active {
+  border-left: #444 3px solid;
+}
+
+#about {
+  margin-top: 3rem;
+}
+
+#about .icon {
+  color: var(--kprimary3);
+}
+
+.abc {
+  font-family: 'Josefin Slab', serif;
+  color: #f0b562;
+  font-size: 50px;
+}
+
+#education .card,
+#experience .card,
+#community .card,
+#about2 .card,
+#achievements .card,
+#projects .card,
+#open-source .card,
+#blog .card {
+  background-color: var(--kprimary4);
+}
+
+.img-icon {
+  height: 4rem;
+  width: 4rem;
+  margin: auto;
+  display: block;
+}
+
+.plang {
+  border-radius: 6px;
+  box-shadow: 5px 0 15px rgba(0, 0, 0, 0.25);
+  position: relative;
+  transform: scale(0.95);
+  transition: all 0.3s ease;
+}
+
+#blog .about-img {
+  height: 6rem;
+  width: 6rem;
+  margin: 1rem auto;
+  display: block;
+}
+
+#blog .icon {
+  color: #f5f7fa;
+}
+
+hr {
+  border-top: 1px solid #f5f7fa;
+}
+
+video {
+  height: 20rem;
+  max-width: 100%;
+  margin: auto;
+}
+
+button {
+  background: none;
+  border: 2px solid;
+  line-height: 1;
+  margin: 0.5em;
+  transition: 0.25s;
+  color: #ffaa33;
+  border-color: #ffaa33;
+}
+
+button.raise:hover,
+button.raise:focus {
+  box-shadow: 0 0.5em 0.5em -0.4em black;
+  transform: translateY(-0.25em);
+  border-color: black;
+  color: black;
+}
+
+.ab {
+  padding: 1em 2em;
+}
+
+.proj {
+  padding: 0.5em 1em;
+}
+
+.project-img {
+  height: 250px;
+}
+
+#my {
+  border-radius: 25%;
+  margin-top: 80px;
+  height: 350px;
+}
